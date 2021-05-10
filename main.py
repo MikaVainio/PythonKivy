@@ -10,7 +10,7 @@ from kivy.uix.label import Label # Tekstielementti
 from kivy.uix.textinput import TextInput # Tekstikenttä (syöttökenttä)
 from kivy.uix.button import Button # Painike
 
-# Muodostetaan 2:n sarakkeen sijoitteluruudukko ja sen käyttöliittymäelementit
+# Muodostetaan 2:n sarakkeen sijoitteluruudukko ja siihen tarvittavat käyttöliittymäelementit
 class App_grid(GridLayout):
     """Grid layout definition and UI elements"""
     def __init__(self, **kwargs): # **kwargs -> keyword arguments
@@ -45,7 +45,7 @@ class App_grid(GridLayout):
         self.bmi.font_size = 24
         self.bmi.disabled = True
     
-    # Laskepainikkeen toiminnot määrittelevä metodi
+    # Laske-painikkeen toiminnot määrittelevä metodi
     def pressed(self, instance):
         p_height = float(self.person_height.text) 
         p_weight = float(self.weight.text)
@@ -54,7 +54,6 @@ class App_grid(GridLayout):
         print('Ja taas laskettiin painoindeksi, joka oli tällä kertaa', p_bmi)
         
         
-
 # Sovelluksen alustaminen: uusi luokka, joka perii App-luokan metodit, ei tarvita muodostinta
 class Weight_app(App):
     """GUI for weight control application"""
