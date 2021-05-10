@@ -60,6 +60,8 @@ class Weight_app(App):
     def build(self):
         return App_grid()
 
+
+# Sovelluksen testaaminen
 if __name__ == "__main__":
     # Sovelluksen käynnistäminen
     Weight_app().run()
