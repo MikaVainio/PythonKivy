@@ -50,7 +50,7 @@ class App_grid(GridLayout):
         p_height = float(self.person_height.text) 
         p_weight = float(self.weight.text)
         p_bmi = p_weight / (p_height / 100)**2
-        self.bmi.text = str(round(p_bmi, 1))
+        self.bmi.text = 'Painoindeksi on ' + str(round(p_bmi, 1))
         print('Ja taas laskettiin painoindeksi, joka oli tällä kertaa', p_bmi)
         
         
