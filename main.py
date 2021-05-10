@@ -21,7 +21,7 @@ class App_grid(GridLayout):
         # Sarakkeiden määrä
         self.cols = 2
 
-        # Käyttöliittymän elementit kentän nimi ja itse kenttä
+        # Käyttöliittymän elementit: kentän nimi ja itse kenttä
         self.add_widget(Label(text='Etunimi'))  # Kentän nimen lisäys
         self.first_name = TextInput()  # Syöttökentän määritys
         self.add_widget(self.first_name)  # Kentän lisäys
@@ -68,6 +68,6 @@ class Weight_app(App):
 
 # Sovelluksen testaaminen
 if __name__ == "__main__":
-    
+
     # Sovelluksen käynnistäminen
     Weight_app().run()
